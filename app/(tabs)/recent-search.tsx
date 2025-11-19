@@ -78,7 +78,7 @@ export default function TabTwoScreen() {
                     dispatch(addSearch(item));
                     router.push({
                       pathname: `/detail-drink`,
-                      params: { drink: item },
+                      params: { drink: JSON.stringify(item) },
                     });
                   }}
                 >
